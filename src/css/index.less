@@ -1,0 +1,50 @@
+@import 'site/site.less';
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0 !important;
+  .navbar-brand {
+    padding: 0;
+  }
+}
+.navbar.affix-top {
+  background: @paper;
+}
+.navbar.affix {
+  background: @paper;
+  width: 100%;
+  #sections > ul > li > a {
+    color: #c7487f;
+  }
+}
+.background {
+  background: linear-gradient(to right, rgba(12,84,80,1) 0%, rgba(0,56,53,1) 100%);
+}
+.WelcomeSection {
+  color: white;
+  h1 {
+    font-size: 40px;
+    margin: 0 0 2vh;
+  }
+  h3 {
+    font-size: 25px;
+    margin: 0;
+  }
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 7.5vw;
+      margin-top: 0;
+      margin-bottom: 1vw;
+    }
+    h3 {
+      font-size: 3.5vw;
+    } 
+  }
+}
+section {
+  padding: 15px 0;
+}
+
+iframe {
+  height: 100vh;
+}

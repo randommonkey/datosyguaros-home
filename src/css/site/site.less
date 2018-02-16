@@ -1,0 +1,138 @@
+@import 'variables.less';
+@import url('https://fonts.googleapis.com/css?family=Bitter|Raleway:300,400');
+
+*,
+*:before,
+*:after {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+footer {
+  border-top: 1px solid #cacece;
+  padding: 2vw;
+}
+
+/* Text */
+.Bitter {
+  font-family: 'Bitter', serif;
+}
+
+.Raleway {
+  font-family: 'Raleway', sans-serif
+}
+
+.FontLight {
+  font-weight: 300;
+}
+
+.TextCenter {
+  text-align: center;
+}
+
+.TextWhite {
+  color: white;
+}
+/* Layout */
+.Container {
+  margin: 0 auto;
+  position: relative;
+  width: 95%;
+  @media screen and (min-width: 768px) {
+    width: 90%;
+  }
+}
+
+.SmallContainer {
+  margin: 0 auto;
+  width: 95%;
+  @media screen and (min-width: 768px) {
+    width: 75%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 65%;
+  }
+}
+
+.Full {
+  min-height: 100vh;
+}
+
+.Half {
+  min-height: 50vh;
+}
+
+.HalfAndQuarter {
+  min-height: 75vh;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+}
+
+.Column.VerticalCenter {
+  justify-content: center
+}
+
+.Column.HorizontalCenter {
+  align-items: center;
+}
+
+.Column.Center {
+  align-items: center;
+  justify-content: center;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Row.VerticalCenter {
+  align-items: center
+}
+
+.Row.HorizontalCenter {
+  justify-content: center;
+}
+
+.Row.Center {
+  align-items: center;
+  justify-content: center;
+}
+
+.SpaceBetween {
+  justify-content: space-between;
+}
+
+.Wrap {
+  flex-wrap: wrap;
+}
+
+.Fill {
+  flex: 1 0 auto;
+}
+
+/* Buttons */
+.Button {
+  border-radius: 2px;
+  font-family: 'Raleway', sans-serif;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.25s ease-in;
+  &:hover,
+  &:focus,
+  &:visited {
+    text-decoration: none;
+  }
+}
